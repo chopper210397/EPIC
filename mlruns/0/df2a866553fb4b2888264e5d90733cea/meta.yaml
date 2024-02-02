@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/df2a866553fb4b2888264e5d90733cea/artifacts
+end_time: 1706714839393
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: df2a866553fb4b2888264e5d90733cea
+run_name: victorious-swan-479
+run_uuid: df2a866553fb4b2888264e5d90733cea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706714829887
+status: 4
+tags: []
+user_id: T39664

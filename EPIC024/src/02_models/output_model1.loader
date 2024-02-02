@@ -1,0 +1,13 @@
+options (skip=1)
+load data infile '.\data\production\04_predicted_ppjj.csv'
+into table tmp_ingresotrc_salida_modelopj
+replace fields terminated by '|' optionally enclosed by '"'
+(periodo,
+codclavecic,
+tipper,
+mto_ingresos_mes "to_number(:mto_ingresos_mes, '99999999999D99', 'nls_numeric_characters=''.,''')",
+flg_perfil_ingresos_3ds,
+mto_conotrosproximos "to_number(:mto_conotrosproximos, '99999999999D99', 'nls_numeric_characters=''.,''')",
+ctd_conotrosproximos,
+n_cluster
+)

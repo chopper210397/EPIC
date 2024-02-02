@@ -1,0 +1,40 @@
+--PARAMETRO DE CREDENCIALES
+@&1 
+
+SET ECHO ON
+WHENEVER SQLERROR EXIT SQL.SQLCODE
+ALTER SESSION DISABLE PARALLEL QUERY;
+
+drop table TMP_TTEE_CLIENTE_SEGEMENTO;
+drop table TMP_TTEE_GGTT_1;
+drop table TMP_TTEE_GGTT_2;
+drop table TMP_TTEE_GGTT;
+drop table TMP_TTEE_BANNI_1;
+drop table TMP_TTEE_BANNI_2;
+drop table TMP_TTEE_BANNI;
+drop table TMP_TTEE_FINAL;
+drop table TMP_TTEE_UNIVERSO;
+drop table TMP_TTEE_GGTT_PERFIL;
+drop table TMP_TTEE_BANNI_PERFIL;
+drop table TMP_TTEE_PERFIL;
+drop table TMP_TTEE_SEGMENTO;
+drop table TMP_TTEE_PROFESION;
+drop table TMP_TTEE_SAPYC;
+drop table TMP_TTEE_EVALS;
+drop table TMP_TTEE_PRE_PAIS;
+drop table TMP_TTEE_PAIS_AUX;
+drop table TMP_TTEE_PAR;
+drop table TMP_TTEE_PAIS;
+drop table TMP_TTEE_PAIS_PAR;
+drop table TMP_TTEE_FLG_PAR;
+drop table TMP_TTEE_GROUP_PERFIL;
+drop table TMP_TTEE_PERFIL1;
+drop table TMP_TTEE_FEC_PERFIL;
+drop table TTEE_FEC_PERFIL2;
+drop table TTEE_FEC_PERFIL3;
+drop table TMP_TTEE_TABLON_FINAL;
+drop table TMP_EPIC003_OUTPUTMODEL;
+drop table TMP_EPIC003_ALERTAS;
+drop table EPIC003_DOC;
+
+QUIT;

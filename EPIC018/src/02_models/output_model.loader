@@ -1,0 +1,23 @@
+options (skip=1)
+load data
+infile '.\data\production\04_predicted.csv'
+into table tmp_ingcashbcacei_outputmodel
+replace fields terminated by '|' optionally enclosed by '"'
+(
+periodo,
+codclavecic,
+mto_ingreso "to_number(:mto_ingreso, '99999999999d99', 'nls_numeric_characters=''.,''')",
+num_ingreso ,
+antiguedadcliente "to_number(:antiguedadcliente, '99999999999d99', 'nls_numeric_characters=''.,''')",
+mto_ctas_recientes "to_number(:mto_ctas_recientes, '99999999999d99', 'nls_numeric_characters=''.,''')",
+por_cash "to_number(:por_cash, '99999999999d99', 'nls_numeric_characters=''.,''')",
+flg_perfil,
+flg_an_lsb_np,
+flg_act_eco,
+ctd_dias_debajolava02,
+porc_cash_mesanterior "to_number(:porc_cash_mesanterior, '99999999999d99', 'nls_numeric_characters=''.,''')",
+flg_rel_an_lsb_np,
+flg_acteco_plaft,
+flg_marcasensible_plaft,
+outlier
+)

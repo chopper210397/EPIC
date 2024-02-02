@@ -1,0 +1,40 @@
+--parametro de credenciales
+@&1
+
+alter session disable parallel query;
+
+set echo off
+set feedback off
+set head off
+set lin 9999
+set trimspool on
+set wrap off
+set pages 0
+set term off
+
+SPOOL '.\data\production\01_raw.csv';
+
+PROMPT PERIODO|CODUNICOCLI_LIMPIO|MONTO_TOTAL|CTD_TRX|CTD_ORDENANTES|FLG_EXTRANJERO|FLG_ROS|FLG_LSB_NP|FLG_AN|FLG_PERFIL|FLG_FAMILIAR_APELLIDO|FLG_CLIENTE|MONTO_TOTAL_SEMANAL|PORCENTAJE_MONTO|CTD_TRX_SEMANAL|PORCENTAJE_CTD;
+
+SELECT
+    PERIODO||'|'||
+    CODUNICOCLI_LIMPIO||'|'||
+    REPLACE(TRIM(TO_CHAR(MONTO_TOTAL,'99999999999999999990D00')),',','.')||'|'||
+    CTD_TRX||'|'||
+    CTD_ORDENANTES||'|'||
+    FLG_EXTRANJERO||'|'||
+    FLG_ROS||'|'||
+    FLG_LSB_NP||'|'||
+    FLG_AN||'|'||
+    FLG_PERFIL||'|'||
+    FLG_FAMILIAR_APELLIDO||'|'||
+    FLG_CLIENTE||'|'||
+    REPLACE(TRIM(TO_CHAR(MONTO_TOTAL_SEMANAL,'99999999999999999990D00')),',','.')||'|'||
+    REPLACE(TRIM(TO_CHAR(PORCENTAJE_MONTO,'99999999999999999990D00')),',','.')||'|'||
+    CTD_TRX_SEMANAL||'|'||
+    REPLACE(TRIM(TO_CHAR(PORCENTAJE_CTD,'99999999999999999990D00')),',','.')
+FROM tmp_epic032_univ_total;
+
+SPOOL OFF;
+
+QUIT;

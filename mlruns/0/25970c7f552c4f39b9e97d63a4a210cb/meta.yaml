@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/25970c7f552c4f39b9e97d63a4a210cb/artifacts
+end_time: 1706717399836
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 25970c7f552c4f39b9e97d63a4a210cb
+run_name: respected-stag-798
+run_uuid: 25970c7f552c4f39b9e97d63a4a210cb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706717390158
+status: 3
+tags: []
+user_id: T39664

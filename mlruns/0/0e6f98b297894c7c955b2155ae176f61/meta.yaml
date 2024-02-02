@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/0e6f98b297894c7c955b2155ae176f61/artifacts
+end_time: 1706716901466
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0e6f98b297894c7c955b2155ae176f61
+run_name: persistent-gnat-164
+run_uuid: 0e6f98b297894c7c955b2155ae176f61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706716901025
+status: 4
+tags: []
+user_id: T39664

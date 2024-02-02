@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/3ab98af4c50b42d89cb31b1d5fff1cfd/artifacts
+end_time: 1706714795841
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3ab98af4c50b42d89cb31b1d5fff1cfd
+run_name: gentle-shoat-921
+run_uuid: 3ab98af4c50b42d89cb31b1d5fff1cfd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706714786101
+status: 4
+tags: []
+user_id: T39664

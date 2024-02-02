@@ -1,0 +1,18 @@
+options (skip=1)
+load data
+infile './data/production/04_predicted.csv'
+into table tmp_hb_salidamodelo
+replace fields terminated by '|' optionally enclosed by '"'
+(
+periodo,
+codclavecic,
+tipper ,
+flgarchivonegativo ,
+mtodolarizado "to_number(:mtodolarizado, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+paisriesgo_monto "to_number(:paisriesgo_monto, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+ctd_beneficiario,
+ctdeval,
+indice_concentrador	"to_number(:indice_concentrador, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+ratio "to_number(:ratio, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+outlier
+)

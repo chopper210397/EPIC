@@ -1,0 +1,38 @@
+options (skip=1)
+load data
+infile '.\data\production\04_predicted1.csv'
+into table tmp_yape_salida_modelo
+replace fields terminated by '|' optionally enclosed by '"'
+(
+codmes_operacion,
+codclavecic,
+monto_ingreso "to_number(:monto_ingreso, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+ctd_ingreso,
+mto_egr "to_number(:mto_egr, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+ctd_egreso,
+flg_pep,
+flg_pep_rel,
+tipper,
+act_economica_gruposinteres,
+codprofesion,
+catprofesion,
+antiguedad,
+flgnp,
+ctdnp,
+flglsb,
+ctdlsb,
+flgarchivonegativo,
+flgnplsban,
+ctd_an_np_lsb,
+flg_perfil_3ds,
+flg_policia,
+ant_yape,
+flg_cuenta_yapecard,
+ctd_ope_dist_ing,
+ctd_ope_dist_egr,
+ctd_alertas_prev,
+flg_pep_tot,
+outlier "to_number(:outlier, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')"
+)
+
+

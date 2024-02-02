@@ -1,0 +1,48 @@
+options (skip=1)
+load data
+infile '.\data\production\04_predicted.csv'
+into table tmp_cvme_salida_modelo
+replace fields terminated by '|' optionally enclosed by '"'
+(
+periodo,
+codclavecic,
+edad "to_number(:edad, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+tipper,
+codprofesion,
+descodprofesion,
+catprofesion,
+fecapertura,
+antiguedad "to_number(:antiguedad, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+tipcli,
+codsubsegmento,
+dessubsegmento,
+codsegmento,
+dessegmento,
+flgnocliente,
+codacteconomica,
+desacteconomica,
+flg_acteco_nodef,
+flgnp,
+ctdnp,
+flglsb,
+ctdlsb,
+flgarchivonegativo,
+destipmotivonegativo,
+flgnplsban,
+ctd_an_np_lsb,
+ctdeval,
+ctd_ordenates_distintos,
+mto_total "to_number(:mto_total, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+mto_compra "to_number(:mto_compra, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+mto_venta "to_number(:mto_venta, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+ctd_total,
+ctd_compra,
+ctd_venta,
+mto_zaed "to_number(:mto_zaed, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+ctd_zaed,
+ctd_dias,
+mto_depositos "to_number(:mto_depositos, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+flg_perfil_depositos_3ds,
+ctd_trx_lim,
+outlier
+)

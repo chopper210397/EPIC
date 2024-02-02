@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/f2e66c99175543679d8e6452584670a8/artifacts
+end_time: 1706715136817
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f2e66c99175543679d8e6452584670a8
+run_name: unruly-kite-172
+run_uuid: f2e66c99175543679d8e6452584670a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706715127220
+status: 3
+tags: []
+user_id: T39664

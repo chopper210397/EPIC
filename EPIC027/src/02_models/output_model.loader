@@ -1,0 +1,12 @@
+options (skip=1)
+load data
+infile '.\data\production\04_predicted.csv'
+into table tmp_grm_salida_modelo
+replace fields terminated by '|' optionally enclosed by '"'
+(
+codmes,
+codclavecic,
+ratio_no_total_sf_hab "to_number(:ratio_no_total_sf_hab, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+variacio_1m_total_deuda "to_number(:variacio_1m_total_deuda, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+outlier
+)

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1706722768204
+current_stage: None
+description: ''
+last_updated_timestamp: 1706722768204
+name: external_model1
+run_id: 1217b8e1c8ed4b55b360acc7150e0d65
+run_link: ''
+source: mlflow-artifacts:/713941759287942995/1217b8e1c8ed4b55b360acc7150e0d65/artifacts/internal_model_path
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/713941759287942995/1217b8e1c8ed4b55b360acc7150e0d65/artifacts/internal_model_path
+user_id: null
+version: 2

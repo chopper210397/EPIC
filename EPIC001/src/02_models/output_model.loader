@@ -1,0 +1,18 @@
+options (skip=1)
+load data
+infile '.\data\production\04_predicted.csv'
+into table tmp_retatmext_salida_modelo
+replace fields terminated by '|' optionally enclosed by '"'
+(
+periodo,
+codclavecic,
+mto_opepos "to_number(:mto_opepos, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+ctd_opepos,
+mto_opeatm "to_number(:mto_opeatm, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+ctd_opeatm,
+flg_paisriesgo,
+flg_ecuador,
+mto_total_ope "to_number(:mto_total_ope, '9999999999d99999999999999999999', 'nls_numeric_characters=''.,''')",
+ctd_total_ope,
+outlier
+)

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/24957353651a48178f89312f32abc702/artifacts
+end_time: 1706715158115
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 24957353651a48178f89312f32abc702
+run_name: carefree-zebra-689
+run_uuid: 24957353651a48178f89312f32abc702
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706715148222
+status: 3
+tags: []
+user_id: T39664

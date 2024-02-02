@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/0e62571ea5f649a5a9f90319fe516af4/artifacts
+end_time: 1706716944097
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0e62571ea5f649a5a9f90319fe516af4
+run_name: adventurous-newt-66
+run_uuid: 0e62571ea5f649a5a9f90319fe516af4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706716943658
+status: 4
+tags: []
+user_id: T39664
